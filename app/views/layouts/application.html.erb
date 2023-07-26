@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DesafioGaleria</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>  
+		<!-- Main -->
+			<div id="main">
+    
+
+
+
+    
+        <%= yield %>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+						</ul>
+					</footer>
+
+      </div>
+
+      <%= javascript_include_tag "breakpoints.min" %>
+      <%= javascript_include_tag "browser.min" %>
+      <%= javascript_include_tag "jquery.min" %>
+      <%= javascript_include_tag "main" %>
+
+      <script src="https://kit.fontawesome.com/54e6b835f5.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
